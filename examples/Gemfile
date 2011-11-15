@@ -1,0 +1,10 @@
+source :rubygems
+
+gem 'sinatra'
+gem 'autoparse'
+gem 'signet', :path => '../../signet'
+gem 'jwt'
+gem 'google-api-client', :path => '../../google-api-ruby-client'
+gem 'omniauth-google', :path => '../'
+gem 'omniauth'
+gem 'multi_json'
