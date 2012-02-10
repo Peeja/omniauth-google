@@ -5,6 +5,7 @@ $:.uniq!
 require 'rubygems'
 require 'rake'
 
+gem 'rspec', '~> 1.2.9'
 begin
   require 'spec/rake/spectask'
 rescue LoadError

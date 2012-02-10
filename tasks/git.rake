@@ -10,7 +10,7 @@ namespace :git do
 
     desc 'Create a new tag in the Git repository'
     task :create do
-      changelog = File.open('CHANGELOG', 'r') { |file| file.read }
+      changelog = File.open('CHANGELOG.md', 'r') { |file| file.read }
       puts '-' * 80
       puts changelog
       puts '-' * 80
@@ -19,10 +19,15 @@ namespace :git do
       v = ENV['VERSION'] or abort 'Must supply VERSION=x.y.z'
       abort "Versions don't match #{v} vs #{PKG_VERSION}" if v != PKG_VERSION
 
+      git_status = `git status`
+      if git_status !~ /nothing to commit \(working directory clean\)/
+        abort "Working directory isn't clean."
+      end
+
       tag = "#{PKG_NAME}-#{PKG_VERSION}"
       msg = "Release #{PKG_NAME}-#{PKG_VERSION}"
 
-      existing_tags = `git tag -l #{PKG_NAME}-*`.split("\n")
+      existing_tags = `git tag -l #{PKG_NAME}-*`.split('\n')
       if existing_tags.include?(tag)
         warn('Tag already exists, deleting...')
         unless system "git tag -d #{tag}"

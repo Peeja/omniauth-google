@@ -38,7 +38,7 @@ use OmniAuth::Builder do
       'https://www.googleapis.com/auth/userinfo.profile',
       'https://www.googleapis.com/auth/plus.me'
     ],
-    :skip_info => true
+    :skip_info => false
 end
 
 run App.new
