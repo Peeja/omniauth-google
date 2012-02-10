@@ -3,6 +3,7 @@ PATH
   specs:
     google-api-omniauth (0.1.0)
       google-api-client (~> 0.4.0)
+      signet (>= 0.3.2)
 
 GEM
   remote: http://rubygems.org/
@@ -55,6 +56,6 @@ PLATFORMS
 
 DEPENDENCIES
   google-api-client
-  omniauth
   google-api-omniauth!
+  omniauth
   sinatra
