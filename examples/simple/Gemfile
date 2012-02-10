@@ -2,5 +2,5 @@ source :rubygems
 
 gem 'sinatra'
 gem 'google-api-client'
-gem 'omniauth-google-api', :path => '../../'
+gem 'google-api-omniauth', :path => '../../'
 gem 'omniauth'

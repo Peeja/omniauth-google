@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = "omniauth-google-api"
+  s.name = "google-api-omniauth"
   s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = "An OmniAuth strategy for Google.\n"
   s.email = "bob@sporkmonger.com"
   s.extra_rdoc_files = ["README.md"]
-  s.files = ["lib/omniauth", "lib/omniauth/google", "lib/omniauth/google/version.rb", "lib/omniauth/google.rb", "lib/omniauth/strategies", "lib/omniauth/strategies/google.rb", "lib/omniauth-google.rb", "spec/spec.opts", "spec/spec_helper.rb", "tasks/clobber.rake", "tasks/gem.rake", "tasks/git.rake", "tasks/metrics.rake", "tasks/rdoc.rake", "tasks/spec.rake", "tasks/yard.rake", "CHANGELOG.md", "LICENSE", "Rakefile", "README.md"]
+  s.files = ["lib/google", "lib/google/omniauth.rb", "lib/omniauth", "lib/omniauth/google", "lib/omniauth/google/version.rb", "lib/omniauth/google.rb", "lib/omniauth/strategies", "lib/omniauth/strategies/google.rb", "spec/spec.opts", "spec/spec_helper.rb", "tasks/clobber.rake", "tasks/gem.rake", "tasks/git.rake", "tasks/metrics.rake", "tasks/rdoc.rake", "tasks/spec.rake", "tasks/yard.rake", "CHANGELOG.md", "LICENSE", "Rakefile", "README.md"]
   s.homepage = "http://code.google.com/p/omniauth-google/"
   s.rdoc_options = ["--main", "README.md"]
   s.require_paths = ["lib"]

@@ -1,8 +1,7 @@
 require 'bundler/setup'
 require 'sinatra/base'
 require 'omniauth'
-require 'omniauth-google-api'
-require 'multi_json'
+require 'google/omniauth'
 
 class App < Sinatra::Base
   get '/' do

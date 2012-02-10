@@ -13,4 +13,4 @@ An OmniAuth strategy for Google.
 
 # Install
 
-* sudo gem install omniauth-google-api
+* sudo gem install google-api-omniauth
