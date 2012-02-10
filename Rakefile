@@ -17,7 +17,7 @@ end
 require File.join(File.dirname(__FILE__), 'lib/omniauth/google', 'version')
 
 PKG_DISPLAY_NAME   = 'OmniAuth Google'
-PKG_NAME           = PKG_DISPLAY_NAME.downcase.gsub(' ', '-')
+PKG_NAME           = 'omniauth-google-api'
 PKG_VERSION        = OmniAuth::Google::VERSION::STRING
 PKG_FILE_NAME      = "#{PKG_NAME}-#{PKG_VERSION}"
 

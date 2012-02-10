@@ -11,18 +11,6 @@
 
 An OmniAuth strategy for Google.
 
-# Features
-
-* A feature list goes here.
-
-# Example Usage
-
-    # Some code goes here.
-
-# Requirements
-
-* OmniAuth Google has no dependencies.
-
 # Install
 
-* sudo gem install omniauth-google
+* sudo gem install omniauth-google-api

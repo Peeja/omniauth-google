@@ -1,7 +1,7 @@
 PATH
   remote: ../../
   specs:
-    omniauth-google (0.1.0)
+    omniauth-google-api (0.1.0)
       google-api-client (~> 0.4.0)
 
 GEM
@@ -56,5 +56,5 @@ PLATFORMS
 DEPENDENCIES
   google-api-client
   omniauth
-  omniauth-google!
+  omniauth-google-api!
   sinatra
