@@ -24,8 +24,9 @@ namespace :gem do
     s.extra_rdoc_files = %w( README.md )
     s.rdoc_options.concat ['--main',  'README.md']
 
-    s.add_runtime_dependency('google-api-client', '~> 0.4.0')
+    s.add_runtime_dependency('google-api-client', '~> 0.4')
     s.add_runtime_dependency('signet', '>= 0.3.2')
+    s.add_runtime_dependency('omniauth', '>= 0')
 
     s.add_development_dependency('rake', '~> 0.8.3')
     s.add_development_dependency('rspec', '~> 1.1.11')
