@@ -92,7 +92,7 @@ module OmniAuth
       end
 
       credentials do
-        hash = {'access_token' => client.authorization.access_token}
+        hash = {'token' => client.authorization.access_token}
         if client.authorization.refresh_token
           hash.merge!('refresh_token' => client.authorization.refresh_token)
         end
