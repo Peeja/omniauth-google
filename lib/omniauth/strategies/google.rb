@@ -69,7 +69,7 @@ module OmniAuth
 
       uid do
         if client.authorization.id_token
-          client.authorization.decoded_id_token['id']
+          client.authorization.decoded_id_token['sub']
         elsif client.authorization.access_token && !skip_info? &&
             (client.authorization.scope.include?(PLUS_PROFILE_SCOPE) ||
             client.authorization.scope.include?(USERINFO_SCOPE))
